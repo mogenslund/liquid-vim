@@ -8,6 +8,9 @@ Feel free to add more features and create pull requests. Take a look at the code
 
 In this experimental phase I aim for functionality matching vim. Making pretty, adjusting details and doing autocompletion, I know will be possible later. So right now, either a command works or nothing happens.
 
+## Video
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/pJ0SkNeFMok/0.jpg)](http://www.youtube.com/watch?v=pJ0SkNeFMok "Walk Through Video")
+
 ## Installation
 For a general introduction to installing [Liquid](https://github.com/mogenslund/liquid) extensions take a look at [Basic Setup](http://salza.dk/setupbasic.html).
 
