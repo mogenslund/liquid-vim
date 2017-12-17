@@ -33,5 +33,6 @@ RUN mkdir -p liq/src/liana
 
 RUN echo "(ns liana.core\n  (:require [dk.salza.liquid-vim.core :as vimcore])\n  (:gen-class))\n\n(defn -main\n  [& args]\n  (apply vimcore/-main args))\n" > liq/src/liana/core.clj
 
-RUN echo "{:deps {org.clojure/data.json {:mvn/version \"0.2.6\"}\n        org.clojure/core.async {:mvn/version \"0.3.465\"}}\n :paths [\"src\"\n         \"../../proj/liquid/src\"\n         \"../../proj/liquid/resources\"\n         \"../../proj/liquid-vim/src\"]}" > liq/deps.edn
+RUN echo "{:deps {org.clojure/data.json {:mvn/version \"0.2.6\"}\n        org.clojure/core.async {:mvn/version \"0.3.465\"}}\n :paths [\"src\"\n         \"../proj/liquid/src\"\n         \"../proj/liquid/resources\"\n         \"../proj/liquid-vim/src\"]}" > liq/deps.edn
 
+WORKDIR /home/liana/liq
