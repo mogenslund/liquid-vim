@@ -1,6 +1,5 @@
 (ns dk.salza.liquid-vim.apps.vimcommandapp
   (:require [dk.salza.liq.editor :as editor]
-            [dk.salza.liq.keys :as keys]
             [dk.salza.liq.coreutil :refer :all]))
 
 
@@ -37,16 +36,13 @@
   ))
 
 (def keymap
-  (merge
-    {:cursor-color :green
-     :C-g exitapp
-     :esc exitapp
-     :enter execute
-     :tab :typeahead-based-on-commands-keys
-     :space #(editor/insert " ")
-    }
-    (keys/alphanum-mapping editor/insert)
-    (keys/symbols-mapping editor/insert)))
+  {:cursor-color :green
+   "C-g" exitapp
+   "esc" exitapp
+   "\n" execute
+   "\t" :typeahead-based-on-commands-keys
+   " " #(editor/insert " ")
+   :selfinsert editor/insert})
 
 (defn run
   []

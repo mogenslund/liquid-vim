@@ -14,5 +14,5 @@
   (editor/set-default-app vimtextapp/run)
   (editor/remove-buffer "scratch")
   (editor/new-buffer "scratch")
-  (editor/set-global-key :f5 editor/eval-last-sexp)
+  (editor/set-global-key "f5" editor/eval-last-sexp)
   (editor/updated))
