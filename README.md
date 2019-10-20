@@ -1,4 +1,7 @@
 # Vim like extension for Liquid Text Editor
+
+NOTICE: This extensions is outdated and not needed anymore, since core Liquid has vim-like keybindings as default now.
+
 This extension adds vim like features for [Liquid Text Editor](https://github.com/mogenslund/liquid)
 
 ## Status
